@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_badge"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#AA000000"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+
+<RelativeLayout 
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="vertical" 
+     android:layout_centerVertical="true"
+     android:layout_centerHorizontal="true"
+     android:layout_margin="20dp"
+    android:background="#AA000000">
+     
+    <TextView
+        android:id="@+id/txt_badge_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:text="@string/txt_badge_first_sound_battle_description"
+        android:textSize="@dimen/size_txt_popup_title"
+        android:textStyle="bold" />
+    
+      <ImageView
+          android:id="@+id/img_badge"
+          android:layout_width="200dp"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/txt_badge_description"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="20dp"
+          android:contentDescription="@string/txt_content_badge_first_sound_battle"/>
+      
+      <TextView
+          android:id="@+id/txt_badge"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/img_badge"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="0dp"
+          android:gravity="center"
+          android:textColor="#ffcc00"
+          android:textSize="@dimen/size_txt_popup_text"
+          android:textStyle="bold" />
+
+      <ImageButton
+          android:id="@+id/btn_popup_ok"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_below="@+id/txt_badge"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/img_btn_ok_states"
+          android:contentDescription="@string/txt_content_ok"/>
+
+  </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_map_record"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:orientation="horizontal"
+    android:overScrollMode="always"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbars="horizontal"
+    android:weightSum = "1" >
+    
+   <!-- <ImageButton
+        android:id="@+id/btn_new_game"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:background="@drawable/img_btn_new_game_states"
+        android:contentDescription="@string/txt_content_new_game"
+        android:textColor="#000000"
+        android:textSize="@dimen/size_txt_btn_hunt"
+        android:textStyle="bold" />
+    -->
+   <Button 
+        android:id="@+id/btn_new_game"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/txt_btn_new_game"
+        android:background="@drawable/img_btn_new_game_states"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_txt_btn_hunt"
+        android:textColor="#000000"/>
+  
+ <!-- <TextView 
+      android:id="@+id/txt_open_sound_battles"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/btn_new_game"
+      android:text="@string/txt_open_sound_battles"
+      android:textSize="@dimen/size_txt_title"
+      /> -->
+  
+  <ListView
+      android:id="@+id/list_sound_battles"
+      android:layout_width="match_parent"
+      android:layout_height="fill_parent"
+      android:layout_alignParentLeft="true"
+      android:layout_marginTop="10dp"
+      android:layout_below="@+id/btn_new_game" />
+  
+   <!-- <TextView 
+      android:id="@+id/txt_pending_sound_battles"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/list_open_sound_battles"
+      android:text="@string/txt_pending_sound_battles"
+      android:textSize="@dimen/size_txt_title"
+      />
+  
+ 	<ListView
+      android:id="@+id/list_pending_sound_battles"
+      android:layout_width="match_parent"
+      android:layout_height="150dp"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/txt_pending_sound_battles" />
+  
+   <TextView 
+      android:id="@+id/txt_closed_sound_battles"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/list_pending_sound_battles"
+      android:text="@string/txt_closed_sound_battles"
+      android:textSize="@dimen/size_txt_title"
+      />
+  
+  <ListView
+      android:id="@+id/list_closed_sound_battles"
+      android:layout_width="match_parent"
+      android:layout_height="150dp"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/txt_closed_sound_battles" /> -->
+  </RelativeLayout>

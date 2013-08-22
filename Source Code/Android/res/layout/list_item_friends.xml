@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal" >
+    
+    
+    <TableLayout
+        android:id="@+id/tbl_friend_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow_friend_item"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+            
+		     <ImageView
+		        android:id="@+id/img_friend_item_profile_picture"
+		        android:contentDescription="@string/txt_img_friend_item_profile_picure_desc"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginRight="10dp"
+		        android:gravity="left"
+		        android:src="@drawable/img_btn_record" />
+		    
+		    <TextView 
+		        android:id="@+id/txt_friend_item_name"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="@dimen/size_txt_normal"
+		        android:gravity="center"
+		        android:text="Statische N."/>
+		
+		    <TextView
+		        android:id="@+id/txt_friend_item_total_points"
+		        android:contentDescription=""
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:gravity="right"
+		        android:text="47" />
+	    </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_sound_battle_points"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SoundBattlePointsActivity" >
+
+    <!-- TITLE -->
+
+    <TextView
+        android:id="@+id/txt_youve_won"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/txt_youve_won"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- SOUND QUALITY -->
+    <TextView
+        android:id="@+id/txt_sound_quality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_youve_won"
+        android:layout_marginTop="20dp"
+        android:text="@string/txt_sound_quality"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/txt_sound_quality_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_sound_quality"
+        android:text="@string/txt_sound_quality_help"
+        android:textSize="12sp" />
+    
+    <LinearLayout 
+        android:id="@+id/layout_sound_quality_scores"
+	    android:layout_width="fill_parent"
+	    android:layout_height="35dp"
+	    android:layout_below="@+id/txt_sound_quality_help"
+	    android:weightSum="1.0" >
+	    
+	    <TextView
+	        android:id="@+id/txt_sound_quality_score_player"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight=".25"
+	        android:background="@drawable/img_score_player"
+	        android:gravity="left"
+	        android:text="@string/txt_sound_quality_score_player"
+	        android:textColor="#ffffff"
+	        android:textSize="23sp" />
+	
+	    <TextView
+	        android:id="@+id/txt_sound_quality_score_opponent"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight=".75"
+	        android:background="@drawable/img_score_opponent"
+	        android:gravity="right"
+	        android:text="@string/txt_sound_quality_score_opponent"
+	        android:textColor="#ffffff"
+	        android:textSize="23sp" />
+    </LinearLayout>
+
+    <!-- LOCATION ACCURACY -->
+    <TextView
+        android:id="@+id/txt_location_accuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	    android:layout_below="@+id/layout_sound_quality_scores"
+        android:layout_marginTop="20dp"
+        android:text="@string/txt_location_accuracy"
+        android:textSize="20sp" />    
+        
+   <TextView
+        android:id="@+id/txt_location_accuracy_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_location_accuracy"
+        android:text="@string/txt_location_accuracy_help"
+        android:textSize="12sp" />
+   
+    <LinearLayout 
+        android:id="@+id/layout_location_accuracy_scores"
+	    android:layout_width="fill_parent"
+	    android:layout_height="35dp"
+	    android:layout_below="@+id/txt_location_accuracy_help"
+	    android:weightSum="1.0" >
+	    
+	    <TextView
+	        android:id="@+id/txt_location_accuracy_score_player"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight=".85"
+	        android:background="@drawable/img_score_player"
+	        android:gravity="left"
+	        android:text="@string/txt_location_accuracy_score_player"
+	        android:textColor="#ffffff"
+	        android:textSize="23sp" />
+	
+	    <TextView
+	        android:id="@+id/txt_location_accuracy_score_opponent"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight=".15"
+	        android:background="@drawable/img_score_opponent"
+	        android:gravity="right"
+	        android:text="@string/txt_location_accuracy_score_opponent"
+	        android:textColor="#ffffff"
+	        android:textSize="23sp" />
+	    </LinearLayout>
+
+    <!-- SPEED -->
+    <TextView
+        android:id="@+id/txt_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_location_accuracy_scores"
+        android:layout_marginTop="20dp"
+        android:text="@string/txt_speed"
+        android:textSize="20sp" /> 
+        
+   <TextView
+        android:id="@+id/txt_speed_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_speed"
+        android:text="@string/txt_speed_help"
+        android:textSize="12sp" />
+   
+    <LinearLayout 
+        android:id="@+id/layout_speed_scores"
+	    android:layout_width="fill_parent"
+	    android:layout_height="35dp"
+	    android:layout_below="@+id/txt_speed_help"
+	    android:weightSum="1.0" >
+    
+	     <TextView
+	        android:id="@+id/txt_speed_score_player"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight=".60"
+	        android:background="@drawable/img_score_player"
+	        android:gravity="left"
+	        android:text="@string/txt_speed_score_player"
+	        android:textColor="#ffffff"
+	        android:textSize="23sp" />
+	
+	    <TextView
+	        android:id="@+id/txt_speed_score_opponent"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight=".40"
+	        android:background="@drawable/img_score_opponent"
+	        android:gravity="right"
+	        android:text="@string/txt_speed_score_opponent"
+	        android:textColor="#ffffff"
+	        android:textSize="23sp" />
+	</LinearLayout>
+	
+    <!-- TOTAL -->
+
+    <TextView
+        android:id="@+id/txt_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_speed_scores"
+        android:layout_marginTop="30dp"
+        android:text="@string/txt_total"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+   
+    <LinearLayout 
+        android:id="@+id/layout_total_scores"
+	    android:layout_width="fill_parent"
+	    android:layout_height="45dp"
+	    android:layout_below="@+id/txt_total"
+	    android:weightSum="1.0" >
+    
+	     <TextView
+	         android:id="@+id/txt_total_score_player"
+	         android:layout_width="0dp"
+	         android:layout_height="fill_parent"
+	         android:layout_weight=".56"
+	         android:background="@drawable/img_score_player"
+	         android:gravity="left"
+	         android:text="@string/txt_total_score_player"
+	         android:textColor="#ffffff"
+	         android:textSize="30sp"
+	         android:textStyle="bold" />
+	
+	    <TextView
+	        android:id="@+id/txt_total_score_opponent"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight=".44"
+	        android:background="@drawable/img_score_opponent"
+	        android:gravity="right"
+	        android:text="@string/txt_total_score_opponent"
+	        android:textColor="#ffffff"
+	        android:textSize="30sp"
+	        android:textStyle="bold" />
+	</LinearLayout>
+
+</RelativeLayout>

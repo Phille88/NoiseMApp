@@ -1,0 +1,254 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_screen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_margin="10dp"
+    android:gravity="center_horizontal|center_vertical"
+    android:stretchColumns="2" >
+
+	<TableRow 
+	    android:id = "@+id/tableRow0"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:weightSum="100">
+	    
+	    <TextView 
+	        android:id="@+id/txt_userName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="#FFFFFF"
+	        android:textSize="20sp"
+	        android:textStyle="bold"
+	        />
+	    
+	</TableRow>
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100" >
+
+            <RelativeLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="50"
+	            android:gravity="center"
+	            android:layout_margin="10dp" >
+
+	            <TextView
+	                android:id="@+id/txt_random_record"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_below="@+id/btn_random_record"
+	                android:background="@android:color/white"
+	                android:gravity="center"
+	                android:text="@string/txt_btn_random_record"
+	                android:textColor="#000000"
+	                android:textSize="@dimen/size_txt_btn_main"
+	                android:textStyle="bold" />
+
+	            <ImageButton
+	                android:id="@+id/btn_random_record"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:gravity="center"
+	                android:background="@drawable/img_btn_random_record_states"
+	                android:contentDescription="@string/txt_content_random_record"
+	                android:textColor="#000000"
+	                android:textSize="@dimen/size_txt_btn_main"
+	                android:textStyle="bold" />
+	         </RelativeLayout>
+            
+
+            <RelativeLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="50"
+	            android:gravity="center"
+	            android:layout_margin="10dp" >
+
+	            <TextView
+	                android:id="@+id/txt_sound_battle"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_below="@+id/btn_sound_battle"
+	                android:background="@android:color/white"
+	                android:gravity="center"
+	                android:text="@string/txt_btn_sound_battle"
+	                android:textColor="#000000"
+	                android:textSize="@dimen/size_txt_btn_main"
+	                android:textStyle="bold" />
+
+	            <ImageButton
+	                android:id="@+id/btn_sound_battle"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:gravity="center"
+	                android:background="@drawable/img_btn_sound_battle_states"
+	                android:contentDescription="@string/txt_content_sound_battle"
+	                android:textColor="#000000"
+	                android:textSize="@dimen/size_txt_btn_main"
+	                android:textStyle="bold" />
+	         </RelativeLayout>
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100" >
+
+            <RelativeLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="50"
+	            android:gravity="center"
+	            android:layout_margin="10dp" >
+
+	            <TextView
+	                android:id="@+id/txt_sound_checkin"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_below="@+id/btn_sound_checkin"
+	                android:background="@android:color/white"
+	                android:gravity="center"
+	                android:text="@string/txt_btn_sound_checkin"
+	                android:textColor="#000000"
+	                android:textSize="@dimen/size_txt_btn_main"
+	                android:textStyle="bold" />
+
+	            <ImageButton
+	                android:id="@+id/btn_sound_checkin"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:gravity="center"
+	                android:background="@drawable/img_btn_sound_checkin_states"
+	                android:contentDescription="@string/txt_content_sound_checkin"
+	                android:textColor="#000000"
+	                android:textSize="@dimen/size_txt_btn_main"
+	                android:textStyle="bold" />
+	         </RelativeLayout>
+            
+
+            <RelativeLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="50"
+	            android:gravity="center"
+	            android:layout_margin="10dp" >
+
+	            <TextView
+	                android:id="@+id/txt_noise_hunt"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_below="@+id/btn_noise_hunt"
+	                android:background="@android:color/white"
+	                android:gravity="center"
+	                android:text="@string/txt_btn_noise_hunt"
+	                android:textColor="#000000"
+	                android:textSize="@dimen/size_txt_btn_main"
+	                android:textStyle="bold" />
+
+	            <ImageButton
+	                android:id="@+id/btn_noise_hunt"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:gravity="center"
+	                android:background="@drawable/img_btn_noise_hunt_states"
+	                android:contentDescription="@string/txt_content_noise_hunt"
+	                android:textColor="#000000"
+	                android:textSize="@dimen/size_txt_btn_main"
+	                android:textStyle="bold" />
+	         </RelativeLayout>
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:weightSum="100">
+
+            <RelativeLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="50"
+	            android:gravity="center"
+	            android:layout_margin="10dp" >
+
+	            <TextView
+	                android:id="@+id/txt_view_profile"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_below="@+id/btn_view_profile"
+	                android:background="@android:color/white"
+	                android:gravity="center"
+	                android:text="@string/txt_btn_view_profile"
+	                android:textColor="#000000"
+	                android:textSize="@dimen/size_txt_btn_main"
+	                android:textStyle="bold" />
+
+	            <ImageButton
+	                android:id="@+id/btn_view_profile"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:gravity="center"
+	                android:background="@drawable/img_btn_view_profile_states"
+	                android:contentDescription="@string/txt_content_view_profile"
+	                android:textColor="#000000"
+	                android:textSize="@dimen/size_txt_btn_main"
+	                android:textStyle="bold" />
+	         </RelativeLayout>
+
+            <RelativeLayout 
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="50"
+	            android:gravity="center"
+	            android:layout_margin="10dp" >
+
+	            <TextView
+	                android:id="@+id/txt_show_map"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_below="@+id/btn_show_map"
+	                android:background="@android:color/white"
+	                android:gravity="center"
+	                android:text="@string/txt_btn_show_map"
+	                android:textColor="#000000"
+	                android:textSize="@dimen/size_txt_btn_main"
+	                android:textStyle="bold" />
+
+	            <ImageButton
+	                android:id="@+id/btn_show_map"
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentTop="true"
+	                android:gravity="center"
+	                android:background="@drawable/img_btn_show_map_states"
+	                android:contentDescription="@string/txt_content_show_map"
+	                android:textColor="#000000"
+	                android:textSize="@dimen/size_txt_btn_main"
+	                android:textStyle="bold" />
+	         </RelativeLayout>
+        </TableRow>
+    </TableLayout>

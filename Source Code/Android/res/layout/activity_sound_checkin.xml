@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_map_record"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+  
+  <fragment 
+          android:id="@+id/map"
+          android:layout_width="match_parent"
+          android:layout_height="150dp"
+          class="com.google.android.gms.maps.SupportMapFragment" />
+  <TextView 
+      android:id="@+id/txt_sound_checkin_whatplace"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/map"
+      android:layout_alignParentLeft="true"
+      android:text="@string/txt_sound_checkin_whatplace"
+      android:textSize="@dimen/size_txt_title"
+      />
+  
+  <ListView
+      android:id="@+id/list_places"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@+id/txt_sound_checkin_whatplace" />
+
+</RelativeLayout>

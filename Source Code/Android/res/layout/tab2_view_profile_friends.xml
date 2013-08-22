@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_profile_friends_tab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical" >
+    
+    <TextView
+        android:id="@+id/txt_leaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_leaderboard"
+        android:textSize="@dimen/size_txt_title"
+        android:layout_alignParentTop="true"/>
+    
+    <!-- <TableLayout
+        android:id="@+id/tbl_leaderboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_leaderboard"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txt_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_name1"
+                android:textSize="@dimen/size_txt_normal" />
+
+            <TextView
+                android:id="@+id/txt_points_name1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/txt_points_name1"
+                android:textSize="@dimen/size_txt_normal"  />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#666362" >
+
+            <TextView
+                android:id="@+id/txt_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_username" 
+                android:textStyle="bold"
+                android:textSize="@dimen/size_txt_normal" />
+
+            <TextView
+                android:id="@+id/txt_points_username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/txt_points_username"
+                android:textStyle="bold" 
+                android:textSize="@dimen/size_txt_normal" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txt_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_name2" 
+                android:textSize="@dimen/size_txt_normal" />
+
+            <TextView
+                android:id="@+id/txt_points_name2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/txt_points_name2"
+                android:textSize="@dimen/size_txt_normal"  />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txt_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_name3" 
+                android:textSize="@dimen/size_txt_normal" />
+
+            <TextView
+                android:id="@+id/txt_points_name3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/txt_points_name3" 
+                android:textSize="@dimen/size_txt_normal" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txt_name4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_name4" 
+                android:textSize="@dimen/size_txt_normal" />
+
+            <TextView
+                android:id="@+id/txt_points_name4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/txt_points_name4" 
+                android:textSize="@dimen/size_txt_normal" />
+        </TableRow>
+    </TableLayout> -->
+    
+    <ListView
+      android:id="@+id/list_friends"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+      android:layout_below="@+id/txt_leaderboard" />
+
+</RelativeLayout>

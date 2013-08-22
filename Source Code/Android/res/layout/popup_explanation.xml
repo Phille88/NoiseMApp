@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_sound_battle_explanation"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#AA000000"
+    android:orientation="vertical"
+    android:weightSum="1.0" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:background="#AA000000"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_explanation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:textSize="@dimen/size_txt_popup_title"
+            android:textStyle="bold" 
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/txt_explanation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_explanation_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:textColor="#ffcc00"
+            android:textSize="@dimen/size_txt_popup_text"/>
+        
+
+      <ImageButton
+          android:id="@+id/btn_popup_explanation_ok"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_below="@+id/txt_explanation"
+          android:layout_marginTop="15dp"
+          android:background="@drawable/img_btn_ok_states"
+          android:contentDescription="@string/txt_content_ok"/>
+
+      <CheckBox
+          android:id="@+id/checkBox_dont_show_again"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/txt_explanation"
+          android:layout_marginTop="15dp"
+          android:text="@string/txt_checkbox_dont_show_again" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

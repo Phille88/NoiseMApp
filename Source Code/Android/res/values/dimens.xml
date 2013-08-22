@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="size_txt_btn_main">18sp</dimen>
+    <dimen name="size_txt_btn_hunt">25sp</dimen>
+    <dimen name="size_txt_btn_ok">18sp</dimen>
+    <dimen name="size_txt_popup_title">30sp</dimen>
+    <dimen name="size_txt_popup_text">20sp</dimen>
+    <dimen name="size_txt_small">10sp</dimen>
+    <dimen name="size_txt_normal">20sp</dimen>
+    <dimen name="size_txt_title">30sp</dimen>
+    <dimen name="size_txt_username">30sp</dimen>
+
+</resources>

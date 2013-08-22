@@ -1,0 +1,205 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="be.kuleuven.noiseapp"
+    android:versionCode="4"
+    android:versionName="1.3" >
+
+    <permission
+        android:name="com.example.mapdemo.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.mapdemo.permission.MAPS_RECEIVE" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!--Keeps the processor from sleeping when a message is received.-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="be.kuleuven.noiseapp.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+ 
+    <uses-permission android:name="be.kuleuven.noiseapp.permission.C2D_MESSAGE" />
+ 
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />  
+   <!--  Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+ 
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAqAKvwtX7uTgdDqmlOmDN3jJk86ITzSCo" />
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name="be.kuleuven.noiseapp.MainActivity"
+            android:label="@string/txt_title_activity_main"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="be.kuleuven.noiseapp.randomrecord.RandomRecordActivity"
+            android:label="@string/txt_random_record_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="be.kuleuven.noiseapp.soundbattle.SoundBattleActivity"
+            android:label="@string/txt_sound_battle_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="be.kuleuven.noiseapp.randomrecord.RandomRecordPointsActivity"
+            android:label="@string/title_activity_random_record_points"
+            android:parentActivityName="be.kuleuven.noiseapp.randomrecord.RandomRecordActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="be.kuleuven.noiseapp.RandomRecordActivity" />
+        </activity>
+        <activity
+            android:name="be.kuleuven.noiseapp.soundbattle.SoundBattleRecordActivity"
+            android:label="@string/title_activity_sound_battle_record"
+            android:parentActivityName="be.kuleuven.noiseapp.soundbattle.SoundBattleActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="be.kuleuven.noiseapp.SoundBattleActivity" />
+        </activity>
+        <activity
+            android:name="be.kuleuven.noiseapp.soundbattle.SoundBattlePointsActivity"
+            android:label="@string/title_activity_sound_battle_points"
+            android:parentActivityName="be.kuleuven.noiseapp.soundbattle.SoundBattleRecordActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="be.kuleuven.noiseapp.SoundBattleRecordActivity" />
+        </activity>
+        <activity
+            android:name="be.kuleuven.noiseapp.noisehunt.NoiseHuntActivity"
+            android:label="@string/title_activity_noise_hunt"
+            android:parentActivityName="be.kuleuven.noiseapp.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="be.kuleuven.noiseapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="be.kuleuven.noiseapp.noisehunt.WalkInTheParkRecordActivity"
+            android:label="@string/title_activity_walk_in_the_park"
+            android:parentActivityName="be.kuleuven.noiseapp.noisehunt.NoiseHuntActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="be.kuleuven.noiseapp.NoiseHuntActivity" />
+        </activity>
+        <activity
+            android:name="be.kuleuven.noiseapp.noisehunt.NoiseHuntPointsActivity"
+            android:label="@string/title_activity_walk_in_the_park_points"
+            android:parentActivityName="be.kuleuven.noiseapp.noisehunt.WalkInTheParkRecordActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="be.kuleuven.noiseapp.WalkInTheParkActivity" />
+        </activity>
+        <activity
+            android:name="be.kuleuven.noiseapp.showmap.ShowMapActivity"
+            android:label="@string/title_activity_show_map"
+            android:parentActivityName="be.kuleuven.noiseapp.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="be.kuleuven.noiseapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="be.kuleuven.noiseapp.soundcheckin.SoundCheckinActivity"
+            android:label="@string/title_activity_sound_checkin" >
+        </activity>
+        <activity
+            android:name="be.kuleuven.noiseapp.profile.ViewProfileTabActivity"
+            android:label="@string/title_activity_view_profile_tab"
+            android:parentActivityName="be.kuleuven.noiseapp.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="be.kuleuven.noiseapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="be.kuleuven.noiseapp.noisehunt.BlitzkriegRecordActivity"
+            android:label="@string/title_activity_blitz_krieg_record"
+            android:parentActivityName="be.kuleuven.noiseapp.noisehunt.NoiseHuntActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="be.kuleuven.noiseapp.noisehunt.NoiseHuntActivity" />
+        </activity>
+        <activity
+            android:name="be.kuleuven.noiseapp.noisehunt.PartyTimeRecordActivity"
+            android:label="@string/title_activity_party_time_record"
+            android:parentActivityName="be.kuleuven.noiseapp.noisehunt.NoiseHuntActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="be.kuleuven.noiseapp.noisehunt.NoiseHuntActivity" />
+        </activity>
+        <activity
+            android:name="be.kuleuven.noiseapp.noisehunt.RiversideRecordActivity"
+            android:label="@string/title_activity_riverside_record"
+            android:parentActivityName="be.kuleuven.noiseapp.noisehunt.NoiseHuntActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="be.kuleuven.noiseapp.noisehunt.NoiseHuntActivity" />
+        </activity>
+        <activity
+            android:name="be.kuleuven.noiseapp.profile.ViewOtherProfileActivity"
+            android:label="@string/title_activity_view_other_profile" >
+        </activity>
+        <activity
+            android:name="be.kuleuven.noiseapp.soundbattle.SoundBattleWaitActivity"
+            android:label="@string/title_activity_sound_battle_wait" >
+        </activity>
+        
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+ 
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+ 
+                <category android:name="be.kuleuven.noiseapp" />
+            </intent-filter>
+        </receiver>
+        
+        <service android:name="be.kuleuven.noiseapp.GCMIntentService"/>
+        
+    </application>
+
+</manifest>

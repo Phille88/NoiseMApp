@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- MAIN -->
+    <string name="app_name">NoiseMApp</string>
+    <string name="menu_settings">Settings</string>
+    <string name="txt_title_activity_main">NoiseMApp</string>
+    <string name="txt_btn_RandomRecord">Random Record</string>
+    <string name="txt_content_random_record">Select to go recording randomly</string>
+    <string name="txt_btn_sound_battle">Sound Battle</string>
+    <string name="txt_content_sound_battle">Select to play the Sound Battle</string>
+    <string name="txt_btn_noise_hunt">Noise Hunt</string>
+    <string name="txt_content_noise_hunt">Select to play the Noise Hunt</string>
+    <string name="txt_btn_sound_checkin">Sound Check-In</string>
+    <string name="txt_content_sound_checkin">Select to check-in</string>
+    <string name="txt_btn_show_map">Show Map</string>
+    <string name="txt_content_show_map">Select to show the map</string>
+    <string name="txt_btn_view_profile">View Profile</string>
+    <string name="txt_content_view_profile">Select to view your profile</string>
+
+    <!-- RANDOM RECORD -->
+    <string name="txt_random_record_name">Random Record</string>
+    <string name="txt_btn_random_record">Random Record</string>
+    <string name="txt_map_not_ready">Map is not ready yet.</string>
+    <string name="txt_content_record">Push this button to record a sound.</string>
+    <string name="action_settings">Settings</string>
+    <!-- - EXPLANATION -->
+    <string name="txt_random_record_explanation">Just run around and start recording as many times as you like! The more recordings you make, the more points you gain!</string>
+
+    <!-- - POINTS -->
+    <string name="txt_well_done">Well done! You\'ve earned:</string>
+    <string name="txt_example_newbie_badge">Newbie badge</string>
+    <string name="txt_example_first_time_street">First time in this street</string>
+    <string name="txt_example_first_of_friends">First of your friends to be here</string>
+    <string name="txt_example_quality">Quality was OK!</string>
+    <string name="txt_example_total">Total:</string>
+    <string name="txt_example_newbie_badge_points">+5</string>
+    <string name="txt_example_first_time_street_points">+3</string>
+    <string name="txt_example_first_of_friends_points">+2</string>
+    <string name="txt_example_quality_points">+2</string>
+    <string name="txt_example_total_points">+12</string>
+    <string name="title_activity_random_record_points">Random Record</string>
+    <string name="txt_btn_share_on_facebook">Share on Facebook</string>
+    <string name="txt_content_share_on_facebook">Share on Facebook</string>
+
+    <!-- BADGE NAMES -->
+    <string name="txt_badge_newbie">Newbie</string>
+    <string name="txt_content_badge_newbie">Newbie badge</string>
+    <string name="txt_badge_first_sound_battle_description">You\'ve won your first Sound Battle!</string>
+    <string name="txt_badge_first_sound_battle">First Sound Battle Won</string>
+    <string name="txt_content_badge_first_sound_battle">First Sound Battle Won Badge</string>
+
+    <!-- SOUND BATTLE -->
+    <string name="txt_sound_battle_name">Sound Battle</string>
+    <!-- - Who to challenge -->
+    <string name="txt_sound_battle_challenge">Who would you like to challenge?</string>
+    <string name="txt_btn_new_game">New game</string>
+    <string name="txt_open_sound_battles">Finish these battles:</string>
+    <string name="txt_pending_sound_battles">Waiting for opponent to finish:</string>
+    <string name="txt_closed_sound_battles">Finished Battles:</string>
+    <string name="txt_btn_challenge_facebook_friend">Facebook Friend</string>
+    <string name="txt_content_challenge_facebook_friend">Challenge a Facebook Friend.</string>
+    <string name="txt_btn_challenge_random">Random Person</string>
+    <string name="txt_content_challenge_random">Challenge a random person.</string>
+    <!-- - SOUND BATTLE EXPLANATION -->
+    <string name="txt_sound_battle_explanation">On the map 3 locations are pinpointed with markers. It\'s your job to go to these locations and record the sound over there. The closer you get to the location, the more points you score. Also, try to hold your device as still as possible while recording. \n\nWhat are you waiting for?</string>
+    <!-- - SOUND BATTE RECORD -->
+    <string name="title_activity_sound_battle_record">Sound Battle</string>
+    <string name="txt_btn_add_friend">Add Friend</string>
+    <string name="img_opponent_profile_picture_desc">Profile picture of opponent.</string>
+    <!-- - SOUND BATTLE POINTS -->
+    <string name="title_activity_sound_battle_points">Sound Battle Points</string>
+    <string name="txt_youve_won">You\'ve won!</string>
+    <string name="txt_sound_quality">Sound quality</string>
+    <string name="txt_sound_quality_help">The sound recorded is being assessed by its quality. To improve quality, the smart phone should be held as still as possible.</string>
+    <string name="txt_sound_quality_score_player">50</string>
+    <string name="txt_sound_quality_score_opponent">150</string>
+    <string name="txt_location_accuracy">Location Accuracy</string>
+    <string name="txt_location_accuracy_help">The closer you get to the asked location, the more points you earn!</string>
+    <string name="txt_location_accuracy_score_player">170</string>
+    <string name="txt_location_accuracy_score_opponent">30</string>
+    <string name="txt_speed">Speed</string>
+    <string name="txt_speed_help">The faster you record all locations, the more points you earn!</string>
+    <string name="txt_speed_score_player">120</string>
+    <string name="txt_speed_score_opponent">80</string>
+    <string name="txt_total">Total</string>
+    <string name="txt_total_score_player">340</string>
+    <string name="txt_total_score_opponent">260</string>
+    <string name="txt_sound_battle_no_points">If the score is ready, it will appear in the Sound Battle screen shortly.\nYou might have to wait a while for the results.\nWhy not play yet another battle?</string>
+
+    <!-- NOISE HUNT -->
+    <string name="title_activity_noise_hunt">Noise Hunt</string>
+    <string name="txt_noise_hunt_challenge">Noise hunts:</string>
+    <string name="txt_noise_hunt_walkinthepark">Walk in the Park</string>
+    <string name="txt_desc_noise_hunt_walkinthepark">Nothing is more pieceful than a refreshing walk in the park, don\'t you think? But is it? What\'s the noise like over there? \n\nTry to measure the sound levels at 3 locations in the park. They should be at least 50m away from each other.</string>
+    <string name="title_activity_walk_in_the_park">Walk in the Park</string>
+    <string name="title_activity_walk_in_the_park_points">Walk in the Park</string>
+    <string name="txt_noise_hunt_blitzkrieg">Blitzkrieg</string>
+    <string name="txt_desc_noise_hunt_blitzkrieg">You have to hurry! There\'s going to be a war very soon. That means a lot of noise! \n\nTry to make as many noise recordings as possible in the next 2 minutes! The counter starts once you start recording.</string>
+    <string name="txt_noise_hunt_partytime">Party Time!</string>
+    <string name="txt_desc_noise_hunt_partytime">Ready to party? Sure you are! The more fun, the better! But that doesn\'t mean louder, does it? \n\nWhat\'s the sound like near party locations outside after 10 p.m.? Record at 3 different locations!</string>
+    <string name="txt_noise_hunt_riverside">Riverside</string>
+    <string name="txt_desc_noise_hunt_riverside">Time to rest again. Nothing better than just sitting near a babbling brook, hearing nothing else than water and little birds. You could doze off, since it\'s so quiet, isn\'t it?\n\nTry to make 5 noise recordings near water in Leuven, at least 100m away from each other.</string>
+    <string name="txt_noise_hunt_trainspotting">Trainspotting</string>
+    <string name="txt_desc_noise_hunt_trainspotting">How many trains have you already spotted in Leuven? Noisy hobby, though! \n\nGet near a track (distance of 30m is enough, don\'t act dangerously!) and sample those trains!</string>
+    <string name="txt_noise_hunt_morningglory">Morning Glory</string>
+    <string name="txt_desc_noise_hunt_morningglory">The early bird catches the worm! \n\nGet out of bed between 04.00 a.m. and 8 a.m. and get some recordings done!</string>
+
+    <!-- SOUND CHECK-IN -->
+    <string name="title_activity_sound_checkin">Sound Check-in</string>
+    <string name="txt_sound_checkin_name">Sound Checkin</string>
+    <string name="txt_sound_checkin_whatplace">Where are you?</string>
+    <string name="txt_img_btn_checkin_desc">Checkin button</string>
+
+    <!-- VIEW PROFILE -->
+    <string name="title_activity_view_profile_tab">Profile</string>
+    <!-- - ME -->
+    <string name="title_section1">Me</string>
+    <string name="txt_desc_img_profile_picture">Profile picture</string>
+    <string name="txt_username">Philippe De Croock</string>
+    <string name="txt_points_earned">Points earned:</string>
+    <string name="txt_points_earned_username">0</string>
+    <string name="txt_battles_won">Battles won:</string>
+    <string name="txt_battles_won_username">0</string>
+    <string name="txt_last_sound_checkin">Last Sound Checkin:</string>
+    <string name="txt_last_sound_checkin_username">None</string>
+    <string name="txt_badges_earned">Badges earned:</string>
+    <!-- - OTHER -->
+    <string name="txt_view_other_profile_name">Profile</string>
+    <string name="txt_desc_img_other_profile_picture">Profile picture</string>
+    <string name="txt_other_username">Philippe De Croock</string>
+    <string name="txt_other_points_earned">Points earned:</string>
+    <string name="txt_other_points_earned_username">62</string>
+    <string name="txt_other_battles_won">Battles won:</string>
+    <string name="txt_other_battles_won_username">1</string>
+    <string name="txt_other_badges_earned">Badges earned:</string>
+    <string name="txt_btn_delete_friend">Delete Friend</string>
+    <!-- - LEADERBOARD -->
+    <string name="txt_img_friend_item_profile_picure_desc">Profile picture</string>
+    <string name="title_section2">Friends</string>
+    <string name="txt_leaderboard">Leaderboard</string>
+
+    <!-- SHOW MAP -->
+    <string name="txt_show_map_name">All Recorded Noise</string>
+    <string name="title_activity_show_map">Show Map</string>
+
+    <!-- POPUP -->
+    <string name="txt_checkbox_dont_show_again">Don\'t show this again</string>
+
+    <!-- Hello World -->
+    <string name="hello_world">Hello, World!</string>
+
+    <!-- General -->
+    <string name="txt_content_ok">Click OK to proceed.</string>
+    <string name="title_activity_maps">Record</string>
+    <string name="title_activity_test_record">TestRecordActivity</string>
+    <string name="title_activity_blitz_krieg_record">Blitzkrieg</string>
+    <string name="title_activity_party_time_record">Party Time!</string>
+    <string name="title_activity_riverside_record">Riverside</string>
+    <string name="title_activity_view_other_profile">ViewOtherProfileActivity</string>
+    <string name="title_activity_sound_battle_wait">SoundBattleWaitActivity</string>
+    
+    
+    <!-- Google Cloud Messaging -->
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on Demo Server.</string>
+    <string name="server_registered">From Demo Server: successfully added device!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on Demo Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on Demo Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+    
+    <!-- About -->
+    <string name="aboutTitle">About</string>
+    <string name="aboutExplanation">Hi, I\'m Philippe De Croock and I have developed this app for my master thesis: \"Generating Sound Level Maps through Gamification\".\n\nBy using this app, you help me with providing test results!\n\nIf you have any questions, please email me at philippe.decroock@student.kuleuven.be.\n\nThanks! </string>
+    
+
+</resources>
